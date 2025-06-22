@@ -1,6 +1,6 @@
 {
-  "name": "gandlaf",
-  "displayName": "Gandlaf",
+  "name": "gandalf",
+  "displayName": "gandalf",
   "description": "c++ chat bot helper",
   "version": "0.0.1",
   "engines": {
@@ -9,13 +9,16 @@
   "categories": [
     "Other"
   ],
-  "activationEvents": [],
+    "activationEvents": [
+    "onCommand:gandalf.helloWorld"
+  ],
   "main": "./dist/extension.js",
   "contributes": {
     "commands": [
       {
-        "command": "gandlaf.helloWorld",
-        "title": "Hello World"
+        "command": "gandalf.helloWorld",
+        "title": "Hello World",
+        "category": "gandalf"
       }
     ]
   },
